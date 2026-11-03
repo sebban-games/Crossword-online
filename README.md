@@ -1,4 +1,4 @@
-# Crossword Duel, instrukcja gry
+# Krzyżówka Duel, instrukcja gry
 
 Turowa krzyżówka panoramiczna dla dwóch osób. Na zmianę dopisujecie litery do wspólnej planszy i zbieracie punkty za trafienia i dokończone hasła. Każdy gra na swoim urządzeniu albo oboje na jednym telefonie.
 
@@ -8,9 +8,12 @@ Turowa krzyżówka panoramiczna dla dwóch osób. Na zmianę dopisujecie litery 
 
 1. Obie osoby otwierają ten sam adres gry i wpisują swoje imię. Gra zapamiętuje je na kolejne partie.
 2. Pierwsza osoba wybiera poziom i czas na turę, potem klika **Utwórz grę i pokaż kod**.
-3. Druga osoba wpisuje czteroliterowy kod w polu **Dołącz do gry** i klika **Dołącz**. Gra startuje sama i losuje, kto zaczyna.
+3. Na ekranie pojawia się czteroliterowy kod. Przycisk **Kopiuj kod** kopiuje go do schowka, więc łatwo wysłać go rywalowi w wiadomości.
+4. Druga osoba wpisuje kod w polu **Dołącz do gry** i klika **Dołącz** (albo naciska Enter). Gra startuje sama i losuje, kto zaczyna.
 
-Poziomów jest sześć, od najmniejszej planszy do największej.
+Podczas łączenia z serwerem przycisk pokazuje kółko ładowania. Jeśli coś pójdzie nie tak, pod formularzem pojawi się czerwony komunikat z opisem problemu.
+
+Poziomów jest sześć, od najmniejszej planszy do największej. Kropki pod nazwą pokazują trudność.
 
 | Poziom | Plansza |
 |---|---|
@@ -20,6 +23,13 @@ Poziomów jest sześć, od najmniejszej planszy do największej.
 | Wymagający | 7 × 8 |
 | Trudny | 7 × 9 |
 | Ekspert | 7 × 9 |
+
+## Ekran gry
+
+* Na górze widać imiona i wyniki obu graczy. Twój kolor to turkus, kolor rywala to bursztyn. Ten sam kolor ma pasek na dole każdej litery, którą dany gracz położył na planszy.
+* Pole wyniku osoby, która ma teraz ruch, jest podświetlone, a przy każdej zmianie punktów wynik lekko „podskakuje”.
+* Pod zegarem jest pasek, który kurczy się wraz z upływem czasu tury. W ostatnich sekundach zegar i pasek zmieniają kolor na czerwony.
+* Pod planszą jest pasek z pytaniem do zaznaczonego hasła i liczbą jego liter.
 
 ## Przebieg tury
 
@@ -33,6 +43,7 @@ Zasady stawiania liter.
 
 * Każdy gracz ma swój zestaw 5 liter, losowanych z tych, których brakuje na całej planszy (nie tylko w jednym haśle).
 * Klikasz kratkę, potem literę z zestawu (albo odwrotnie). Kliknięcie pytania na planszy zaznacza całe hasło, a ponowne kliknięcie tej samej kratki zmienia kierunek z poziomego na pionowy.
+* Postawione, jeszcze niezatwierdzone litery mają przerywaną ramkę. Kliknięcie takiej kratki zdejmuje literę.
 * Litery, których nie użyjesz, zostają Ci na kolejną turę. Na początku następnej tury brakujące litery są dolosowywane do pięciu.
 * Litera z zestawu przepada tylko wtedy, gdy na planszy nie ma już żadnego wolnego pola, w które pasuje.
 
@@ -47,7 +58,7 @@ Czas na turę wybiera osoba tworząca grę. Do wyboru jest 15, 30, 45, 60, 90, 1
 
 ## Podpowiedź
 
-Po 4 turach z rzędu, w których trafiono najwyżej jedną literę, gra pokazuje obu graczom jedno hasło bladymi literami na planszy.
+Po 4 turach z rzędu, w których trafiono najwyżej jedną literę, gra pokazuje obu graczom jedno hasło bladymi, turkusowymi literami na planszy.
 
 ## Gra na jednym urządzeniu
 
@@ -60,7 +71,11 @@ Na ekranie startowym wybierz **Gra na jednym urządzeniu**. Gracze podają sobie
 * **Backspace** zdejmuje ostatnią postawioną literę.
 * **Enter** zatwierdza ruch.
 
-Klawiatura działa tylko na Twojej turze.
+Klawiatura działa tylko na Twojej turze. Na komputerze plansza i panel z literami stoją obok siebie, na telefonie jedno pod drugim.
+
+## Jasny i ciemny motyw
+
+Przycisk w prawym górnym rogu ekranu startowego przełącza motyw w kolejności automatyczny, jasny, ciemny. Automatyczny dopasowuje się do ustawień telefonu lub komputera. Wybór jest zapamiętywany w tej przeglądarce.
 
 ## Instalacja na telefonie
 
@@ -68,7 +83,7 @@ Klawiatura działa tylko na Twojej turze.
 
 1. Otwórz link do gry.
 2. Chrome sam zaproponuje „Dodaj do ekranu głównego” (albo wybierz menu ⋮ i „Zainstaluj aplikację”).
-3. Zatwierdź. Pojawi się ikona jak przy zwykłej aplikacji, otwierana na pełnym ekranie.
+3. Zatwierdź. Pojawi się turkusowa ikona z kafelkami, otwierana na pełnym ekranie.
 
 ### iPhone (Safari)
 
@@ -76,10 +91,12 @@ Klawiatura działa tylko na Twojej turze.
 2. Stuknij ikonę „Udostępnij” (kwadrat ze strzałką) na dole.
 3. Wybierz „Dodaj do ekranu początkowego” i zatwierdź.
 
+Jeśli masz już zainstalowaną grę z tego adresu, nie musisz jej instalować ponownie. Nowy wygląd pobierze się sam przy pierwszym uruchomieniu z internetem. Ikona na ekranie głównym może zmienić się na turkusową z opóźnieniem, bo telefon odświeża ją we własnym tempie.
+
 Jeśli masz zainstalowaną starą wersję spod adresu sebban03.github.io, odinstaluj ją i zainstaluj grę ponownie z nowego linku.
 
-Gra na jednym urządzeniu działa bez internetu po pierwszym wczytaniu. Gra na dwóch urządzeniach wymaga internetu.
+Gra na jednym urządzeniu działa bez internetu po pierwszym wczytaniu. Gra na dwóch urządzeniach wymaga internetu. Na dole ekranu startowego widać tryb gry. Zielona kropka oznacza tryb online, a bursztynowa tryb testowy, w którym gra z drugim urządzeniem nie działa.
 
 ## Dane
 
-Imię, ostatnio wybrany poziom i czas na turę są zapisane **lokalnie w tej przeglądarce**. Przebieg gry online jest zapisany na serwerze pod kodem gry, więc po odświeżeniu strony w tej samej karcie gra wraca sama. Zamknięcie karty kończy Twój udział w tej partii.
+Imię, ostatnio wybrany poziom, czas na turę i motyw są zapisane **lokalnie w tej przeglądarce**. Przebieg gry online jest zapisany na serwerze pod kodem gry, więc po odświeżeniu strony w tej samej karcie gra wraca sama. Zamknięcie karty kończy Twój udział w tej partii.
