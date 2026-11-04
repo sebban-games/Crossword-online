@@ -31,6 +31,22 @@ Poziomów jest sześć, od najmniejszej planszy do największej. Kropki pod nazw
 * Pod zegarem jest pasek, który kurczy się wraz z upływem czasu tury. W ostatnich sekundach zegar i pasek zmieniają kolor na czerwony.
 * Pod planszą jest pasek z pytaniem do zaznaczonego hasła i liczbą jego liter.
 
+## Animacje i dźwięki
+
+Gra reaguje na każde wydarzenie animacją i krótkim dźwiękiem.
+
+* **Start gry.** Plansza pojawia się kaskadą, a gracz z pierwszym ruchem dostaje rozdane litery.
+* **Ruch.** Po zatwierdzeniu nowe litery obracają się jak kafelki, jedna po drugiej, z rosnącym dźwiękiem dzwonka. Nad każdą trafioną literą wyskakuje +1. Zła litera pojawia się na czerwono, trzęsie się i znika z −1.
+* **Dokończone hasło.** Litery hasła przechodzą falą, gra odtwarza melodyjkę, a na górze pojawia się napis z hasłem i premią.
+* **Seria.** Premię za serię czystych tur ogłasza osobny napis i dźwięk.
+* **Wynik.** Liczba punktów nalicza się płynnie, a obok pola wyniku wyskakuje zdobyta liczba.
+* **Zmiana tury.** Napis „Twój ruch” z dźwiękiem i krótką wibracją, gdy przychodzi Twoja kolej. Na jednym urządzeniu napis mówi, który gracz teraz gra.
+* **Ostatnie 5 sekund.** Zegar pulsuje i tyka.
+* **Podpowiedź.** Litery podpowiedzi delikatnie pulsują na planszy.
+* **Koniec gry.** Wygrana kończy się konfetti i fanfarą, a wyniki naliczają się w oknie podsumowania.
+
+Przycisk z głośnikiem w prawym górnym rogu ekranu startowego (i obok przycisku Menu w trakcie gry) wyłącza oraz włącza dźwięki i wibracje. Wybór jest zapamiętywany. Na iPhonie dźwięków nie słychać, gdy telefon jest wyciszony przełącznikiem z boku. Wibracje działają tylko na Androidzie. Jeśli w systemie włączone jest ograniczenie ruchu, gra pomija ruchome animacje i konfetti.
+
 ## Przebieg tury
 
 Gracz na swojej turze ma trzy możliwości.
@@ -62,7 +78,7 @@ Po 4 turach z rzędu, w których trafiono najwyżej jedną literę, gra pokazuje
 
 ## Gra na jednym urządzeniu
 
-Na ekranie startowym wybierz **Gra na jednym urządzeniu**. Gracze podają sobie telefon. Gracz 1 jest zawsze po lewej, Gracz 2 po prawej, a pod zegarem widać, czyja jest tura.
+Na ekranie startowym wybierz **Gra na jednym urządzeniu**. Gracze podają sobie telefon. Gracz 1 jest zawsze po lewej i ma kolor turkusowy, Gracz 2 zawsze po prawej i ma kolor bursztynowy. Pozycje się nie zamieniają. Podświetla się tylko pole wyniku osoby, która ma ruch, a pod zegarem widać napis „Tura: Gracz 1” albo „Tura: Gracz 2”.
 
 ## Sterowanie z klawiatury
 
@@ -77,19 +93,25 @@ Klawiatura działa tylko na Twojej turze. Na komputerze plansza i panel z litera
 
 Przycisk w prawym górnym rogu ekranu startowego przełącza motyw w kolejności automatyczny, jasny, ciemny. Automatyczny dopasowuje się do ustawień telefonu lub komputera. Wybór jest zapamiętywany w tej przeglądarce.
 
-## Instalacja na telefonie
+## Instalacja na telefonie i komputerze
 
-### Android (Chrome)
+Najprościej użyć przycisku **Zainstaluj** na ekranie startowym, pod nazwą gry. Przycisk znika, gdy gra jest już zainstalowana albo otwarta jako aplikacja.
+
+### Android i komputer (Chrome, Edge)
 
 1. Otwórz link do gry.
-2. Chrome sam zaproponuje „Dodaj do ekranu głównego” (albo wybierz menu ⋮ i „Zainstaluj aplikację”).
-3. Zatwierdź. Pojawi się turkusowa ikona z kafelkami, otwierana na pełnym ekranie.
+2. Kliknij **Zainstaluj** na ekranie startowym i potwierdź w oknie przeglądarki.
+3. Pojawi się turkusowa ikona z kafelkami, otwierana na pełnym ekranie.
+
+Jeśli przycisku nie widać, przeglądarka jeszcze nie uznała strony za gotową do instalacji. Odśwież stronę albo wybierz w menu ⋮ „Zainstaluj aplikację” lub „Dodaj do ekranu głównego”.
 
 ### iPhone (Safari)
 
+Na iPhonie przeglądarka nie ma okna instalacji, więc przycisk **Zainstaluj** pokazuje instrukcję.
+
 1. Otwórz link w Safari.
-2. Stuknij ikonę „Udostępnij” (kwadrat ze strzałką) na dole.
-3. Wybierz „Dodaj do ekranu początkowego” i zatwierdź.
+2. Stuknij ikonę „Udostępnij” (kwadrat ze strzałką).
+3. Wybierz „Dodaj do ekranu początkowego” i potwierdź przyciskiem „Dodaj”.
 
 Jeśli masz już zainstalowaną grę z tego adresu, nie musisz jej instalować ponownie. Nowy wygląd pobierze się sam przy pierwszym uruchomieniu z internetem. Ikona na ekranie głównym może zmienić się na turkusową z opóźnieniem, bo telefon odświeża ją we własnym tempie.
 
@@ -99,4 +121,4 @@ Gra na jednym urządzeniu działa bez internetu po pierwszym wczytaniu. Gra na d
 
 ## Dane
 
-Imię, ostatnio wybrany poziom, czas na turę i motyw są zapisane **lokalnie w tej przeglądarce**. Przebieg gry online jest zapisany na serwerze pod kodem gry, więc po odświeżeniu strony w tej samej karcie gra wraca sama. Zamknięcie karty kończy Twój udział w tej partii.
+Imię, ostatnio wybrany poziom, czas na turę, motyw i ustawienie dźwięku są zapisane **lokalnie w tej przeglądarce**. Przebieg gry online jest zapisany na serwerze pod kodem gry, więc po odświeżeniu strony w tej samej karcie gra wraca sama. Do gry online nie trzeba zakładać konta. Gra loguje przeglądarkę anonimowo, bez adresu e-mail i bez danych osobowych, tylko po to, żeby partię mogli zmieniać wyłącznie jej dwaj gracze. Zamknięcie karty kończy Twój udział w tej partii.
